@@ -1,8 +1,7 @@
 <?php
 
 /*
- * Author: @kigen
- * Enable WMS Layer on to ushahidi.
+
  */
 
 

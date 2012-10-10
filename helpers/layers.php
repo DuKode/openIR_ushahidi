@@ -1,10 +1,7 @@
 <?php
 
 /*
- * Author: @kigen
- * It support the plgin in:
- * - generating WMS Layer js code
- * - Creating mockup Base Layer Objects
+
  * 
  */
 

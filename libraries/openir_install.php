@@ -1,6 +1,6 @@
 <?php
 /*
- * Author: @kigen
+
  * Install the Plugin
  * Pre preparations
  */

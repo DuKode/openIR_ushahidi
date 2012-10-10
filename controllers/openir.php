@@ -1,6 +1,6 @@
 <?php
 /*
- * Author: @kigen
+
  */
 
 class OpenIR_Controller extends Controller {

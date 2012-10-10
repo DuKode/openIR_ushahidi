@@ -1,14 +1,14 @@
 === About ===
 name: OpenIR 
 website: dukodestudio.com
-description: open ir data for ushahidi
-version: 0.3
-requires: 2.5
-tested up to: 2.5
-author: ilia koen modified pluging from Seth kigen
+description: openIR data plugin for ushahidi
+version: 0.1
+requires: ????
+tested up to: ????
+author: DuKode Studio modified pluging from Seth kigen 
 
 == Description ==
-open ir data for ushahidi
+openIR data for ushahidi
 
 
 == Installation ==
@@ -16,10 +16,5 @@ open ir data for ushahidi
 2. Edit plugin config to define WMS (base layers & Overlays) you would like to show up on the map.
 4. Activate the plugin.
 == Changelog ==
-0.3
-- Added 2.5 support
 
-0.2
-- Added 2.3 and 2.4 support. 
-- Fixed projection issues
 
