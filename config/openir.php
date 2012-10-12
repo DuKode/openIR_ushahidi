@@ -14,29 +14,29 @@
  */
  
 $config['layers'] = array(
-    'openir_base' => array(
-            'title' => "World Base Layer",
-            'name' => "topp:world",
+    'OPENIR_1' => array(
+            'title' => "openir_title_1",
+            'name' => "openir_name_1",
             'base' => TRUE
-        )	
-     	,
-     	   'za_veg' => array(
-            'title' => "South Africa vegetation",
-            'name' => "za:za_vegetation",
-            'base' => FALSE
-        )
-     	,
-        'state_population' => array(
-            'title' => "USA State Population",
-            'name' => "topp:states",
-            'base' => FALSE
-        )
+        )     		
+                     	,
+  	 'OPENIR_2' => array(
+	            'title' => "openir_title_2",
+	            'name' => "openir_name_2",
+	            'base' => FALSE
+	        )
+	,
+ 	    'OPENIR_3' => array(
+	         'title' => "openir_title_3",
+	         'name' => "openir_name_3",
+	         'base' => FALSE
+	        )
 	
 );
 
 
 //WMS server url:
 //default: Opengeo's geoserver demo
-$config['service_url'] ="http://demo.opengeo.org/geoserver/ows";
+$config['service_url'] ="http://dukodestudio.com/openIR_tileMaps_Wdc/";
 
 ?>

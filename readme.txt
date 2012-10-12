@@ -5,7 +5,7 @@ description: openIR data plugin for ushahidi
 version: 0.1
 requires: ????
 tested up to: ????
-author: DuKode Studio modified pluging from Seth kigen 
+author: DuKode Studio (modified plugin from Seth kigen) 
 
 == Description ==
 openIR data for ushahidi

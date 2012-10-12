@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -13,6 +14,7 @@ class openir {
     }
 
     public function add() {  
+		
         Event::add('ushahidi_filter.map_base_layers', array("OpenIR_Controller", 'register_map_layers'));
         Event::add('ushahidi_filter.map_layers_js', array("OpenIR_Controller", 'modify_layer_code'));
     }    
