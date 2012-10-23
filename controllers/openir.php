@@ -51,7 +51,7 @@ class OpenIR_Controller extends Controller {
 		$js="";
 		$js.= "
 		//var bounds = new OpenLayers.Bounds(-20037508, -20037508, 20037508, 20037508.34);\n		  		  
-		//var bounds = new OpenLayers.Bounds(-180, -85, 180, 85); \n
+		var bounds = new OpenLayers.Bounds(-180, -85, 180, 85); \n
 		//This doesn't affect the map anymore... \n
 	 	//map.maxExtent = bounds;
 
@@ -83,17 +83,12 @@ class OpenIR_Controller extends Controller {
          * Add other layers here...
          * $js .=""; but must register layer var in register_map_layers
          */
-		$js .="  var osm = new OpenLayers.Layer.TMS( 
-			\"OpenStreetMaps\",
-			\"http://tile.openstreetmap.org/\", 
-			{ 
-			isBaseLayer: true , 
-			serviceVersion: '.', 
-			layername: '.', 
-			type: 'png', 
-			//getURL: this.getOSMURL, 
-			//displayOutsideMaxExtent: true , 
-			attribution: '<a href=\"http://www.openstreetmap.org/\">OpenStreetMap</a>'} );\n\n";
+		$js .="  var osm = new OpenLayers.Layer.Google( 'Google Streets',
+	    {
+	      sphericalMercator: true,
+	      isBaseLayer: true
+	    }
+		)\n\n";
        
        /*
 		$js .="  var oam = new OpenLayers.Layer.TMS( 
