@@ -28,8 +28,7 @@ class OpenIR_Controller extends Controller {
 		}
 		//register layer as optional layer
 		$layers['osm'] = layers::get_layer_object('osm');
-		//$layers['gsat'] = layers::get_layer_object('gsat');
-		//$layer['oam']= layers::get_layer_object('oam');
+		$layer['oam']= layers::get_layer_object('oam');
 	
 		
 		
@@ -87,15 +86,14 @@ class OpenIR_Controller extends Controller {
 			\"OpenStreetMaps\",
 			\"http://tile.openstreetmap.org/\", 
 			{ 
-			isBaseLayer: true , 
+			isBaseLayer: false , 
 			serviceVersion: '.', 
 			layername: '.', 
 			type: 'png', 
-			//getURL: this.getOSMURL, 
-			//displayOutsideMaxExtent: true , 
+			getURL: this.getOSMURL, 
+			displayOutsideMaxExtent: true , 
 			attribution: '<a href=\"http://www.openstreetmap.org/\">OpenStreetMap</a>'} );\n\n";
        
-       /*
 		$js .="  var oam = new OpenLayers.Layer.TMS( 
 			\"OpenAerialMap\",
 			\"http://tile.openaerialmap.org/tiles/\", 
@@ -106,17 +104,7 @@ class OpenIR_Controller extends Controller {
 			type: 'png', 
 			getURL: this.getURL , 
 			attribution: '<a href=\"http://www.openstreetmap.org/\">OpenStreetMap</a>'} );\n\n";
-		*/
-		/*$js .="  var gsat = new OpenLayers.Layer.Google(\"Google Satellite\",
-		
-			{ 
-			isBaseLayer: true , 
-			serviceVersion: '.', 
-			layername: '.', 
-			type: 'google.maps.MapTypeId.SATELLITE', 
-			displayOutsideMaxExtent: true} );\n\n";
-		*/
-		
+
         $js .="
                 //map.zoomToMaxExtent();
               ";

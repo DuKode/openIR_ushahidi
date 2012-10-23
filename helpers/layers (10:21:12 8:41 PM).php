@@ -16,7 +16,7 @@ class layers {
 
 		// echo "<!-- $var_name--!>";
 		return $var_name . // "= new OpenLayers.Layer.TMS( \"$layer_name\" , \"http://dukodestudio.com/openIR_tileMaps_Wdc/$layer_title/\", { type: 'png', displayOutsideMaxExtent: true, attribution: '<a href=http://www.openstreetmap.org/>OpenStreetMap</a>'} );
-   "= new OpenLayers.Layer.TMS( \"$layer_name\" , \"http://openir.media.mit.edu/main/prototypes/jakarta-AutoGen/$layer_title/\", { getURL: this.getOSMURL , serviceVersion: '.', layername: '.', type: 'png', isBaseLayer: false, updateWhenIdle:'true', unloadInvisibleTiles: 'true' 
+   "= new OpenLayers.Layer.TMS( \"$layer_name\" , \"http://openir.media.mit.edu/main/prototypes/jakarta-AutoGen/$layer_title/\", { getURL: this.getOSMURL , serviceVersion: '.', layername: '.', type: 'png', updateWhenIdle:'true', unloadInvisibleTiles: 'true' 
 } );
   \n\n";
 	//	return null;
@@ -37,7 +37,7 @@ class layers {
         $layer->description = 'OPENIR Layer';
         $layer->api_url = '';
         $layer->data = array(
-            'baselayer' => FALSE,
+            'baselayer' => TRUE,
             'attribution' => 'dukodestudio',
            	//'url' => 'this.getURL',
             'type' => 'image/png',

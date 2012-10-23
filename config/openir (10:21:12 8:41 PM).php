@@ -17,37 +17,37 @@ $config['layers'] = array(
 		'OPENIR_1' => array(
 		'title' => "321",
 		'name' => "True Color ",
-		'base' => FALSE
+		'base' => TRUE
 		)     		
 		       	,
 		'OPENIR_2' => array(
 		'title' => "432",
-		'name' => "vegetation",
+		'name' => "openir_name_2 ",
 		'base' => FALSE
 		)
 		,
 		'OPENIR_3' => array(
 		'title' => "453",
-		'name' => "soil",
+		'name' => "openir_name_3",
 		'base' => FALSE
 		)
 		,
 		'OPENIR_4' => array(
 		'title' => "543",
-		'name' => "urban",
+		'name' => "openir_name_4",
 		'base' => FALSE
 		)
 		,   
 		'OPENIR_5' => array(
 		'title' => "754",
-		'name' => "moisture",
+		'name' => "openir_name_5",
 		'base' => FALSE
 		)
    // riskmap_autogen
 		,   
 		'OPENIR_6' => array(
 		'title' => "riskmap_autogen",
-		'name' => "riskmap",
+		'name' => "openir_name_6",
 		'base' => FALSE
 		)
 		// ,   
